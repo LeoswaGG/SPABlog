@@ -1,0 +1,258 @@
+/* estilos raíz */
+:root {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  /* css variables */
+  --transition-speed: 600ms;
+  --primary-red: #ff0000;
+  --dark-red: #cc000c;
+  --light-red: #ff3333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* estilos del cuerpo */
+body {
+  color: black;
+  background-color: #212121;
+  /* background-color: #e8e8e8; */
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-red);
+}
+/* estilos para el main */
+#main {
+  /* es una unidad relativa al tamaño de fuente en el selector root, 5rem * 16px = 80px */
+  margin-left: 5rem;
+  padding: 1rem;
+}
+/* estilos para el menú */
+.navbar {
+  /* tiene que estar al tamaño del main */
+  position: fixed;
+  background-color: var(--dark-red);
+  transition: 200ms ease;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/* svg,
+img {
+  width: 2rem;
+  height: 2rem;
+} */
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: white;
+  text-decoration: none;
+  /* filter: grayscale(100%); */
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background-color: var(--light-red);
+  color: black;
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link img,
+svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  /* esto se cambia para dispositivos pequeños */
+}
+
+.fa-secondary {
+  color: gradient(circle, #ff4500, #ffa500, #ffd700, #fff);
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+
+.logo {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  background-color: var(--dark-red);
+  font-size: 0.9rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo svg {
+  transform: rotate(0);
+  transition: transform var(--transition-speed);
+}
+
+.logo-text {
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-540deg);
+}
+
+/* small screen */
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 10px;
+  }
+
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  #main {
+    margin: 0;
+  }
+
+  /* cambia el tamaño de las pictures */
+
+  /* svg,
+  img {
+    width: 1.7rem;
+    height: 1.7rem;
+  } */
+
+  .nav-link img,
+  svg {
+    width: 1.7rem;
+    min-width: 1.7rem;
+    margin: 0 1.5rem;
+    /* esto se cambia para dispositivos pequeños */
+  }
+}
+
+/* large screen */
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+    transition: opacity var(--transition-speed);
+  }
+}
+/* estilos para el error */
+.error-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 3.125rem;
+}
+
+/* tarjeta de error */
+.return-error {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 10px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+
+.return-error::before {
+  content: "\1F519"; /* Código Unicode del emoji de flecha hacia la izquierda */
+  font-size: 24px; /* Ajusta el tamaño de fuente para el emoji */
+  margin-right: 6px; /* Agrega un espacio a la derecha del emoji */
+}
+
+.error {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ef665b;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px -3px #111;
+  margin-top: 20px;
+}
+
+.error-icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 8px;
+  fill: #fff;
+}
+
+.error-icon path {
+  fill: #fff;
+}
+
+.error-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
