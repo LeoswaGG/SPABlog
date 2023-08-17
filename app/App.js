@@ -5,6 +5,7 @@
 import { Header } from "./components/Header.js";
 import { Main } from "./components/Main.js";
 import { Router } from "./components/Router.js";
+import { Theme } from "./helpers/theme.js";
 
 export function App () {
     const $root = document.getElementById( 'root' );
@@ -13,5 +14,6 @@ export function App () {
     $root.appendChild( Header() );
     $root.appendChild( Main() );
 
+    Theme();
     Router();
 }

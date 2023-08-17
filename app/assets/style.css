@@ -15,9 +15,15 @@ a {
 
 /* estilos del cuerpo */
 body {
-  color: black;
+  color: white;
   background-color: #212121;
-  /* background-color: #e8e8e8; */
+  margin: 0;
+  padding: 0;
+}
+
+.body-light {
+  color: #111;
+  background-color: #e8e8e8;
   margin: 0;
   padding: 0;
 }
