@@ -5,19 +5,23 @@
 export function Theme () {
     const $themeImg = document.getElementById( 'theme-2' );
     const $body = document.querySelector( 'body' );
+    const $loader = document.querySelector( '.loader' );
     const theme = localStorage.getItem( 'theme' ); // default value - null
     const moon = 'app/assets/dark.png';
     const sun = 'app/assets/light.png';
-
+    const darkLoader = 'app/assets/loader-dark.svg';
+    const lightLoader = 'app/assets/loader.svg';
     const lightTheme = () => {
         localStorage.setItem( 'theme', 'light' );
         $body.classList.add( 'body-light' );
         $themeImg.src = moon;
+        $loader.src = darkLoader;
     };
     const darkTheme = () => {
         localStorage.setItem( 'theme', 'dark' );
         $body.classList.remove( 'body-light' );
         $themeImg.src = sun;
+        $loader.src = lightLoader;
     };
     if ( theme === null ) {
         localStorage.setItem( 'theme', 'dark' );
