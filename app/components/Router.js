@@ -3,23 +3,42 @@
  * current URL hash.
  */
 import { Error404 } from "./Error404.js";
+import { Phrases } from "./Phrases.js";
+import { PostHome } from "./PostHome.js";
 
-export async function Router () {
+export function Router () { // aquí no puedes usar await porque el código no devuelve una promesa
     const $main = document.getElementById( 'main' );
     const $root = document.getElementById( 'root' );
+    const $loader = document.querySelector( '.loader' );
     const { hash } = location;
     $main.innerHTML = null; // cleans the page before charges content 
-
+    document.querySelector( '.loader' ).style.display = 'block';
     if ( !hash || hash === '#/' || hash === '#/inicio' ) {
-        $main.innerHTML = '<h2>Inicio</h2>';
+        setTimeout( () => { // add delay  
+            $main.appendChild( PostHome() );
+            $main.appendChild( Phrases() );
+            $loader.style.display = 'none';
+        }, 500 );
     } else if ( hash === '#/disciplina' ) {
-        $main.innerHTML = '<h2>Disciplina</h2>';
+        setTimeout( () => {
+            $main.innerHTML = '<h2>Disciplina</h2>';
+            $loader.style.display = 'none';
+        }, 500 );
     } else if ( hash === '#/productividad' ) {
-        $main.innerHTML = '<h2>Productividad</h2>';
+        setTimeout( () => {
+            $main.innerHTML = '<h2>Productividad</h2>';
+            $loader.style.display = 'none';
+        }, 500 );
     } else if ( hash === '#/mentalidad' ) {
-        $main.innerHTML = '<h2>Mentalidad</h2>';
+        setTimeout( () => {
+            $main.innerHTML = '<h2>Mentalidad</h2>';
+            $loader.style.display = 'none';
+        }, 500 );
     } else if ( hash === '#/masculinidad' ) {
-        $main.innerHTML = '<h2>Masculinidad</h2>';
+        setTimeout( () => {
+            $main.innerHTML = '<h2>Masculinidad</h2>';
+            $loader.style.display = 'none';
+        }, 500 );
     } else { // if is other route that doesn't exist...
         $root.innerHTML = Error404();
     }
