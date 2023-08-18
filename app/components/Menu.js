@@ -27,37 +27,37 @@ export function Menu () {
                 <li class="nav-item">
                     <a href="#/inicio" class="nav-link">
                         <img src="app/assets/home.png" alt="inicio">
-                        <span class="link-text">Inicio</span>
+                        <span class="link-text">Renacimiento</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#/disciplina" class="nav-link">
                         <img src="app/assets/achievement.png" alt="disciplina">
-                        <span class="link-text">Disciplina</span>
+                        <span class="link-text">Dominio Propio</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#/productividad" class="nav-link">
                         <img src="app/assets/hourglass.png" alt="productividad">
-                        <span class="link-text">Productividad</span>
+                        <span class="link-text">Momentum</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#/mentalidad" class="nav-link">
                         <img src="app/assets/brain.png" alt="mentalidad">
-                        <span class="link-text">Mentalidad</span>
+                        <span class="link-text">Voluntad Inquebrantable</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#/masculinidad" class="nav-link">
                         <img src="app/assets/pillars.png" alt="masculinidad">
-                        <span class="link-text">Masculinidad</span>
+                        <span class="link-text">Excelencia</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="theme">
                         <img src="app/assets/light.png" alt="tema" id="theme-2">
-                        <span class="link-text">Tema</span>
+                        <span class="link-text">Esencia</span>
                     </a>
                 </li>
             </ul>`;
