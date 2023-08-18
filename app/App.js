@@ -3,6 +3,7 @@
  * initializes the Router.
  */
 import { Header } from "./components/Header.js";
+import { Loader } from "./components/Loader.js";
 import { Main } from "./components/Main.js";
 import { Router } from "./components/Router.js";
 import { Theme } from "./helpers/theme.js";
@@ -13,6 +14,7 @@ export function App () {
     $root.innerHTML = null; // cleans the page before charges content
     $root.appendChild( Header() );
     $root.appendChild( Main() );
+    $root.appendChild( Loader() );
 
     Theme();
     Router();
