@@ -604,3 +604,95 @@ svg {
   font-weight: bold;
   display: none;
 }
+
+/* about section and hero section styles */
+
+.hero {
+  background: rgba(255, 245, 230, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  color: black;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-logo {
+  max-width: 100%;
+  margin-bottom: 20px;
+  width: 80%;
+  margin: 0 auto 20px;
+  animation: fadeInDown 1.5s ease-out;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.card1,
+.card2,
+.card3 {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  color: black;
+  width: calc(33.33% - 20px);
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+}
+
+.card1,
+.card2,
+.card3 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card1,
+.card2,
+.card3 p {
+  font-size: 16px;
+}
+
+.hero h1,
+.hero p {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Animaciones y efectos visuales */
+
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.phrase {
+  font-style: italic;
+}
