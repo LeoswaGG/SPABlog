@@ -6,6 +6,8 @@ import { Error404 } from "./Error404.js";
 import { Phrases } from "./Phrases.js";
 import { PostHome } from "./PostHome.js";
 import { ContactForm } from "./ContactForm.js";
+import { Hero } from "./Hero.js";
+import { About } from "./About.js";
 
 export function Router () { // aquí no puedes usar await porque el código no devuelve una promesa
     const $main = document.getElementById( 'main' );
@@ -16,6 +18,8 @@ export function Router () { // aquí no puedes usar await porque el código no d
     document.querySelector( '.loader' ).style.display = 'block';
     if ( !hash || hash === '#/' || hash === '#/inicio' ) {
         setTimeout( () => { // add delay  
+            $main.appendChild( Hero() );
+            $main.appendChild( About() );
             $main.appendChild( PostHome() );
             $main.appendChild( Phrases() );
             $main.appendChild( ContactForm() );
