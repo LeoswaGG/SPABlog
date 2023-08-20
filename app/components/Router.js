@@ -5,6 +5,7 @@
 import { Error404 } from "./Error404.js";
 import { Phrases } from "./Phrases.js";
 import { PostHome } from "./PostHome.js";
+import { ContactForm } from "./ContactForm.js";
 
 export function Router () { // aquí no puedes usar await porque el código no devuelve una promesa
     const $main = document.getElementById( 'main' );
@@ -17,6 +18,7 @@ export function Router () { // aquí no puedes usar await porque el código no d
         setTimeout( () => { // add delay  
             $main.appendChild( PostHome() );
             $main.appendChild( Phrases() );
+            $main.appendChild( ContactForm() );
             $loader.style.display = 'none';
         }, 500 );
     } else if ( hash === '#/disciplina' ) {
