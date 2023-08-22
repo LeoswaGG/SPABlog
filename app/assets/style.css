@@ -696,3 +696,143 @@ svg {
 .phrase {
   font-style: italic;
 }
+
+/* search box styles */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo-card {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title-card {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  text-align: center;
+}
+
+.logo-section {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+.search-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+}
+
+.search-box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 5px;
+}
+
+.search-input {
+  background-color: #f2f2f2;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  padding-right: 2.5rem;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* Posición absoluta */
+  right: 0; /* Alinear a la derecha */
+  top: 0; /* Alinear arriba */
+  height: 100%; /* Altura completa */
+  width: 20%;
+  border-radius: 30px; /* Ajustar esquinas inferiores */
+  background-color: #007bff; /* Ajustar color de fondo */
+  border: none;
+  padding: 6px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.search-input:placeholder {
+  font-weight: 100;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Single column for small screens */
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .logo-card,
+  .title-card,
+  .search-card {
+    justify-content: center;
+  }
+
+  .search-card {
+    margin-top: 10px;
+    position: relative; /* Establecer posición relativa */
+  }
+
+  .title-card {
+    margin-top: 20px;
+    font-size: 23px;
+  }
+  .search-box {
+    position: relative; /* Establecer posición relativa */
+  }
+
+  .search-input {
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluir el padding en el ancho */
+    padding-right: 40px;
+  }
+  .search-button {
+    position: absolute; /* Posición absoluta */
+    right: 0; /* Alinear a la derecha */
+    top: 0; /* Alinear arriba */
+    height: 100%; /* Altura completa */
+    width: 20%;
+    border-radius: 30px; /* Ajustar esquinas inferiores */
+    background-color: #007bff; /* Ajustar color de fondo */
+    border: none;
+    padding: 6px 10px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .search-card {
+    margin-top: 20px;
+  }
+}
+
+.post {
+  text-align: center;
+  font-weight: bold;
+}
+
+.error-query {
+  text-align: center;
+  color: #cc000c;
+  display: none;
+  font-weight: bold;
+}
