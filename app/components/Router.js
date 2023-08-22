@@ -8,6 +8,7 @@ import { PostHome } from "./PostHome.js";
 import { ContactForm } from "./ContactForm.js";
 import { Hero } from "./Hero.js";
 import { About } from "./About.js";
+import { HeaderSection } from "./HeaderSection.js";
 
 export function Router () { // aquí no puedes usar await porque el código no devuelve una promesa
     const $main = document.getElementById( 'main' );
@@ -27,22 +28,22 @@ export function Router () { // aquí no puedes usar await porque el código no d
         }, 500 );
     } else if ( hash === '#/disciplina' ) {
         setTimeout( () => {
-            $main.innerHTML = '<h2>Disciplina</h2>';
+            $main.appendChild( HeaderSection( 'Dominio Propio' ) );
             $loader.style.display = 'none';
         }, 500 );
     } else if ( hash === '#/productividad' ) {
         setTimeout( () => {
-            $main.innerHTML = '<h2>Productividad</h2>';
+            $main.appendChild( HeaderSection( 'Momentum' ) );
             $loader.style.display = 'none';
         }, 500 );
     } else if ( hash === '#/mentalidad' ) {
         setTimeout( () => {
-            $main.innerHTML = '<h2>Mentalidad</h2>';
+            $main.appendChild( HeaderSection( 'Voluntad Inquebrantable' ) );
             $loader.style.display = 'none';
         }, 500 );
     } else if ( hash === '#/masculinidad' ) {
         setTimeout( () => {
-            $main.innerHTML = '<h2>Masculinidad</h2>';
+            $main.appendChild( HeaderSection( 'Titanes de excelencia' ) );
             $loader.style.display = 'none';
         }, 500 );
     } else { // if is other route that doesn't exist...
