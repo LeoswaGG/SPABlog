@@ -1,21 +1,19 @@
-/* The above code is defining a JavaScript function called "Phrases". This function creates a new HTML
-section element and sets its innerHTML property to a multi-line string. */
-export function Phrases () {
+/**
+ * The function "Phrases" creates a new HTML section element and sets its innerHTML property to display
+ * a list of quotes and their authors.
+ * @param quotes - The "quotes" parameter is an object that contains six properties: quote1, quote2,
+ * quote3, quote4, quote5, and quote6. Each property represents a quote and its author.
+ * @returns a new HTML section element with its innerHTML property set to a multi-line string.
+ */
+export function Phrases ( quotes ) {
     const $section = document.createElement( 'section' );
     $section.innerHTML = `
     <h2 class="phrase-title" >Chispazos de Genialidad</h2>
         <div class="quote-container">
             <div class="quote">
                 <div class="card-name">Frase del Mes</div>
-                <div class="card-quote">
-                    <svg width="80" height="80" viewBox="0 0 330 307" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M302.258 176.221C320.678 176.221 329.889 185.432 329.889 203.853V278.764C329.889 297.185 320.678 306.395 302.258 306.395H231.031C212.61 306.395 203.399 297.185 203.399 278.764V203.853C203.399 160.871 207.902 123.415 216.908 91.4858C226.323 59.1472 244.539 30.902 271.556 6.75027C280.562 -1.02739 288.135 -2.05076 294.275 3.68014L321.906 29.4692C328.047 35.2001 326.614 42.1591 317.608 50.3461C303.69 62.6266 292.228 80.4334 283.223 103.766C274.626 126.69 270.328 150.842 270.328 176.221H302.258ZM99.629 176.221C118.05 176.221 127.26 185.432 127.26 203.853V278.764C127.26 297.185 118.05 306.395 99.629 306.395H28.402C9.98126 306.395 0.770874 297.185 0.770874 278.764V203.853C0.770874 160.871 5.27373 123.415 14.2794 91.4858C23.6945 59.1472 41.9106 30.902 68.9277 6.75027C77.9335 -1.02739 85.5064 -2.05076 91.6467 3.68014L119.278 29.4692C125.418 35.2001 123.985 42.1591 114.98 50.3461C101.062 62.6266 89.6 80.4334 80.5942 103.766C71.9979 126.69 67.6997 150.842 67.6997 176.221H99.629Z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <div class="body-text">El éxito son las metas, todo lo demás son comentarios.</div>
-                <div class="author"><br> <span>-Brian Tracy</span> <svg xmlns="http://www.w3.org/2000/svg"
+                <div class="body-text">"${ quotes.quote1.quote }".</div>
+                <div class="author"><br> <span>-${ quotes.quote1.author }</span> <svg xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24" width="18">
                         <path fill="none" d="M0 0H24V24H0z"></path>
                         <path
@@ -26,15 +24,8 @@ export function Phrases () {
             </div>
             <div class="quote">
                 <div class="card-name">Frase del Mes</div>
-                <div class="card-quote">
-                    <svg width="80" height="80" viewBox="0 0 330 307" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M302.258 176.221C320.678 176.221 329.889 185.432 329.889 203.853V278.764C329.889 297.185 320.678 306.395 302.258 306.395H231.031C212.61 306.395 203.399 297.185 203.399 278.764V203.853C203.399 160.871 207.902 123.415 216.908 91.4858C226.323 59.1472 244.539 30.902 271.556 6.75027C280.562 -1.02739 288.135 -2.05076 294.275 3.68014L321.906 29.4692C328.047 35.2001 326.614 42.1591 317.608 50.3461C303.69 62.6266 292.228 80.4334 283.223 103.766C274.626 126.69 270.328 150.842 270.328 176.221H302.258ZM99.629 176.221C118.05 176.221 127.26 185.432 127.26 203.853V278.764C127.26 297.185 118.05 306.395 99.629 306.395H28.402C9.98126 306.395 0.770874 297.185 0.770874 278.764V203.853C0.770874 160.871 5.27373 123.415 14.2794 91.4858C23.6945 59.1472 41.9106 30.902 68.9277 6.75027C77.9335 -1.02739 85.5064 -2.05076 91.6467 3.68014L119.278 29.4692C125.418 35.2001 123.985 42.1591 114.98 50.3461C101.062 62.6266 89.6 80.4334 80.5942 103.766C71.9979 126.69 67.6997 150.842 67.6997 176.221H99.629Z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <div class="body-text">Somos lo que somos porque primero lo hemos imaginado.</div>
-                <div class="author"><br> <span>-Donald Curtis</span> <svg xmlns="http://www.w3.org/2000/svg"
+                <div class="body-text">"${ quotes.quote2.quote }".</div>
+                <div class="author"><br> <span>-${ quotes.quote2.author }</span> <svg xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24" width="18">
                         <path fill="none" d="M0 0H24V24H0z"></path>
                         <path
@@ -45,15 +36,8 @@ export function Phrases () {
             </div>
             <div class="quote">
                 <div class="card-name">Frase del Mes</div>
-                <div class="card-quote">
-                    <svg width="80" height="80" viewBox="0 0 330 307" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M302.258 176.221C320.678 176.221 329.889 185.432 329.889 203.853V278.764C329.889 297.185 320.678 306.395 302.258 306.395H231.031C212.61 306.395 203.399 297.185 203.399 278.764V203.853C203.399 160.871 207.902 123.415 216.908 91.4858C226.323 59.1472 244.539 30.902 271.556 6.75027C280.562 -1.02739 288.135 -2.05076 294.275 3.68014L321.906 29.4692C328.047 35.2001 326.614 42.1591 317.608 50.3461C303.69 62.6266 292.228 80.4334 283.223 103.766C274.626 126.69 270.328 150.842 270.328 176.221H302.258ZM99.629 176.221C118.05 176.221 127.26 185.432 127.26 203.853V278.764C127.26 297.185 118.05 306.395 99.629 306.395H28.402C9.98126 306.395 0.770874 297.185 0.770874 278.764V203.853C0.770874 160.871 5.27373 123.415 14.2794 91.4858C23.6945 59.1472 41.9106 30.902 68.9277 6.75027C77.9335 -1.02739 85.5064 -2.05076 91.6467 3.68014L119.278 29.4692C125.418 35.2001 123.985 42.1591 114.98 50.3461C101.062 62.6266 89.6 80.4334 80.5942 103.766C71.9979 126.69 67.6997 150.842 67.6997 176.221H99.629Z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <div class="body-text">Cada ser nació con algún destino, ¿para qué fuiste creado tú?.</div>
-                <div class="author"><br> <span>-Marco Aurelio</span> <svg xmlns="http://www.w3.org/2000/svg"
+                <div class="body-text">"${ quotes.quote3.quote }".</div>
+                <div class="author"><br> <span>-${ quotes.quote3.author }</span> <svg xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24" width="18">
                         <path fill="none" d="M0 0H24V24H0z"></path>
                         <path
@@ -64,15 +48,8 @@ export function Phrases () {
             </div>
             <div class="quote">
                 <div class="card-name">Frase del Mes</div>
-                <div class="card-quote">
-                    <svg width="80" height="80" viewBox="0 0 330 307" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M302.258 176.221C320.678 176.221 329.889 185.432 329.889 203.853V278.764C329.889 297.185 320.678 306.395 302.258 306.395H231.031C212.61 306.395 203.399 297.185 203.399 278.764V203.853C203.399 160.871 207.902 123.415 216.908 91.4858C226.323 59.1472 244.539 30.902 271.556 6.75027C280.562 -1.02739 288.135 -2.05076 294.275 3.68014L321.906 29.4692C328.047 35.2001 326.614 42.1591 317.608 50.3461C303.69 62.6266 292.228 80.4334 283.223 103.766C274.626 126.69 270.328 150.842 270.328 176.221H302.258ZM99.629 176.221C118.05 176.221 127.26 185.432 127.26 203.853V278.764C127.26 297.185 118.05 306.395 99.629 306.395H28.402C9.98126 306.395 0.770874 297.185 0.770874 278.764V203.853C0.770874 160.871 5.27373 123.415 14.2794 91.4858C23.6945 59.1472 41.9106 30.902 68.9277 6.75027C77.9335 -1.02739 85.5064 -2.05076 91.6467 3.68014L119.278 29.4692C125.418 35.2001 123.985 42.1591 114.98 50.3461C101.062 62.6266 89.6 80.4334 80.5942 103.766C71.9979 126.69 67.6997 150.842 67.6997 176.221H99.629Z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <div class="body-text">Si no puedes controlar tu mente, entonces no puedes controlar nada más.</div>
-                <div class="author"><br> <span>-Napoleon Hill</span> <svg xmlns="http://www.w3.org/2000/svg"
+                <div class="body-text">"${ quotes.quote4.quote }".</div>
+                <div class="author"><br> <span>-${ quotes.quote4.author }</span> <svg xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24" width="18">
                         <path fill="none" d="M0 0H24V24H0z"></path>
                         <path
@@ -83,15 +60,8 @@ export function Phrases () {
             </div>
             <div class="quote">
                 <div class="card-name">Frase del Mes</div>
-                <div class="card-quote">
-                    <svg width="80" height="80" viewBox="0 0 330 307" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M302.258 176.221C320.678 176.221 329.889 185.432 329.889 203.853V278.764C329.889 297.185 320.678 306.395 302.258 306.395H231.031C212.61 306.395 203.399 297.185 203.399 278.764V203.853C203.399 160.871 207.902 123.415 216.908 91.4858C226.323 59.1472 244.539 30.902 271.556 6.75027C280.562 -1.02739 288.135 -2.05076 294.275 3.68014L321.906 29.4692C328.047 35.2001 326.614 42.1591 317.608 50.3461C303.69 62.6266 292.228 80.4334 283.223 103.766C274.626 126.69 270.328 150.842 270.328 176.221H302.258ZM99.629 176.221C118.05 176.221 127.26 185.432 127.26 203.853V278.764C127.26 297.185 118.05 306.395 99.629 306.395H28.402C9.98126 306.395 0.770874 297.185 0.770874 278.764V203.853C0.770874 160.871 5.27373 123.415 14.2794 91.4858C23.6945 59.1472 41.9106 30.902 68.9277 6.75027C77.9335 -1.02739 85.5064 -2.05076 91.6467 3.68014L119.278 29.4692C125.418 35.2001 123.985 42.1591 114.98 50.3461C101.062 62.6266 89.6 80.4334 80.5942 103.766C71.9979 126.69 67.6997 150.842 67.6997 176.221H99.629Z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <div class="body-text">La negación es la máxima zona de confort.</div>
-                <div class="author"><br> <span>-David Goggins</span> <svg xmlns="http://www.w3.org/2000/svg"
+                <div class="body-text">"${ quotes.quote5.quote }".</div>
+                <div class="author"><br> <span>-${ quotes.quote5.author }</span> <svg xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24" width="18">
                         <path fill="none" d="M0 0H24V24H0z"></path>
                         <path
@@ -102,15 +72,8 @@ export function Phrases () {
             </div>
             <div class="quote">
                 <div class="card-name">Frase del Mes</div>
-                <div class="card-quote">
-                    <svg width="80" height="80" viewBox="0 0 330 307" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M302.258 176.221C320.678 176.221 329.889 185.432 329.889 203.853V278.764C329.889 297.185 320.678 306.395 302.258 306.395H231.031C212.61 306.395 203.399 297.185 203.399 278.764V203.853C203.399 160.871 207.902 123.415 216.908 91.4858C226.323 59.1472 244.539 30.902 271.556 6.75027C280.562 -1.02739 288.135 -2.05076 294.275 3.68014L321.906 29.4692C328.047 35.2001 326.614 42.1591 317.608 50.3461C303.69 62.6266 292.228 80.4334 283.223 103.766C274.626 126.69 270.328 150.842 270.328 176.221H302.258ZM99.629 176.221C118.05 176.221 127.26 185.432 127.26 203.853V278.764C127.26 297.185 118.05 306.395 99.629 306.395H28.402C9.98126 306.395 0.770874 297.185 0.770874 278.764V203.853C0.770874 160.871 5.27373 123.415 14.2794 91.4858C23.6945 59.1472 41.9106 30.902 68.9277 6.75027C77.9335 -1.02739 85.5064 -2.05076 91.6467 3.68014L119.278 29.4692C125.418 35.2001 123.985 42.1591 114.98 50.3461C101.062 62.6266 89.6 80.4334 80.5942 103.766C71.9979 126.69 67.6997 150.842 67.6997 176.221H99.629Z"
-                            fill="currentColor"></path>
-                    </svg>
-                </div>
-                <div class="body-text">Un hombre es dueño de su destino en la medida en que es dueño de su atención.</div>
-                <div class="author"><br> <span>-La Ducha Fría</span> <svg xmlns="http://www.w3.org/2000/svg"
+                <div class="body-text">"${ quotes.quote6.quote }".</div>
+                <div class="author"><br> <span>-${ quotes.quote6.author }</span> <svg xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24" width="18">
                         <path fill="none" d="M0 0H24V24H0z"></path>
                         <path
