@@ -1,6 +1,6 @@
 /**
  * The `Router` function is responsible for updating the content of the `main` element based on the
- * current URL hash.
+ * current URL hash, and it also handles error cases.
  */
 import { Error404 } from "./Error404.js";
 import { Phrases } from "./Phrases.js";
@@ -9,6 +9,7 @@ import { ContactForm } from "./ContactForm.js";
 import { Hero } from "./Hero.js";
 import { About } from "./About.js";
 import { HeaderSection } from "./HeaderSection.js";
+import { PostCard } from "./PostCard.js";
 
 export function Router () { // aquí no puedes usar await porque el código no devuelve una promesa
     const $main = document.getElementById( 'main' );
@@ -29,24 +30,29 @@ export function Router () { // aquí no puedes usar await porque el código no d
     } else if ( hash === '#/disciplina' ) {
         setTimeout( () => {
             $main.appendChild( HeaderSection( 'Dominio Propio' ) );
+            $main.appendChild( PostCard( [], [], [] ) );
             $loader.style.display = 'none';
         }, 500 );
     } else if ( hash === '#/productividad' ) {
         setTimeout( () => {
             $main.appendChild( HeaderSection( 'Momentum' ) );
+            $main.appendChild( PostCard( [], [], [] ) );
             $loader.style.display = 'none';
         }, 500 );
     } else if ( hash === '#/mentalidad' ) {
         setTimeout( () => {
             $main.appendChild( HeaderSection( 'Voluntad Inquebrantable' ) );
+            $main.appendChild( PostCard( [], [], [] ) );
             $loader.style.display = 'none';
         }, 500 );
     } else if ( hash === '#/masculinidad' ) {
         setTimeout( () => {
             $main.appendChild( HeaderSection( 'Titanes de excelencia' ) );
+            $main.appendChild( PostCard( [], [], [] ) );
             $loader.style.display = 'none';
         }, 500 );
     } else { // if is other route that doesn't exist...
         $root.innerHTML = Error404();
     }
 }
+
