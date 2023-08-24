@@ -11,6 +11,8 @@ import { About } from "./About.js";
 import { HeaderSection } from "./HeaderSection.js";
 import { PostCard } from "./PostCard.js";
 import { OurPact } from "./OurPactSection.js";
+import { postsData } from "../helpers/postsData.js";
+import { quotes } from "../helpers/quotesData.js";
 
 export function Router () { // aquí no puedes usar await porque el código no devuelve una promesa
     const $main = document.getElementById( 'main' );
@@ -24,32 +26,7 @@ export function Router () { // aquí no puedes usar await porque el código no d
             $main.appendChild( Hero() );
             $main.appendChild( About() );
             $main.appendChild( PostHome() );
-            $main.appendChild( Phrases( {
-                quote1: {
-                    quote: 'El éxito son las metas, todo lo demás son comentarios',
-                    author: 'Brian Tracy'
-                },
-                quote2: {
-                    quote: 'Somos lo que somos porque primero lo hemos imaginado',
-                    author: 'Donald Curtis'
-                },
-                quote3: {
-                    quote: 'Cada ser nació con algún destino, ¿para qué fuiste creado tú?',
-                    author: 'Marco Aurelio'
-                },
-                quote4: {
-                    quote: 'Si no puedes controlar tu mente, entonces no puedes controlar nada más',
-                    author: 'Napoleon Hill'
-                },
-                quote5: {
-                    quote: 'La negación es la máxima zona de confort',
-                    author: 'David Goggins'
-                },
-                quote6: {
-                    quote: 'Un hombre es dueño de su destino en la medida en que es dueño de su atención',
-                    author: 'La ducha fría'
-                }
-            } ) );
+            $main.appendChild( Phrases( quotes ) );
             $main.appendChild( OurPact() );
             $main.appendChild( ContactForm() );
             $loader.style.display = 'none';
@@ -57,25 +34,25 @@ export function Router () { // aquí no puedes usar await porque el código no d
     } else if ( hash === '#/disciplina' ) {
         setTimeout( () => {
             $main.appendChild( HeaderSection( 'Dominio Propio' ) );
-            $main.appendChild( PostCard( [], [], [] ) );
+            $main.appendChild( PostCard( postsData.disciplinePosts ) );
             $loader.style.display = 'none';
         }, 500 );
     } else if ( hash === '#/productividad' ) {
         setTimeout( () => {
             $main.appendChild( HeaderSection( 'Momentum' ) );
-            $main.appendChild( PostCard( [], [], [] ) );
+            $main.appendChild( PostCard( postsData.productivityPosts ) );
             $loader.style.display = 'none';
         }, 500 );
     } else if ( hash === '#/mentalidad' ) {
         setTimeout( () => {
             $main.appendChild( HeaderSection( 'Voluntad Inquebrantable' ) );
-            $main.appendChild( PostCard( [], [], [] ) );
+            $main.appendChild( PostCard( postsData.mindSetPosts ) );
             $loader.style.display = 'none';
         }, 500 );
     } else if ( hash === '#/masculinidad' ) {
         setTimeout( () => {
             $main.appendChild( HeaderSection( 'Titanes de excelencia' ) );
-            $main.appendChild( PostCard( [], [], [] ) );
+            $main.appendChild( PostCard( postsData.masculinityPosts ) );
             $loader.style.display = 'none';
         }, 500 );
     } else { // if is other route that doesn't exist...
