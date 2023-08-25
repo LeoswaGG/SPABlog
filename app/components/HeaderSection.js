@@ -25,6 +25,35 @@ export function HeaderSection ( title ) {
 					</div>
 				</div>
 			</div>
-		</div>`;
+		</div>
+		<p class="error-query">ola</p>`;
+	setTimeout( () => {
+		document.addEventListener( 'keyup', ( e ) => {
+			if ( e.target.matches( '.search-input' ) ) {
+				if ( e.key === 'Enter' ) {
+					const query = e.target.value.toLowerCase();
+					const $errorQuery = document.querySelector( '.error-query' );
+					const $posts = Array.from( document.querySelectorAll( '.post' ) );
+					let isCoincidence = false;
+					$posts.filter( ( post ) => {
+						if ( post.querySelector( '.post-title' ).textContent.toLowerCase().includes( query ) ) {
+							isCoincidence = true;
+							post.classList.remove( 'post-hidden' );
+							post.classList.add( 'post-visible' );
+						} else {
+							post.classList.remove( 'post-visible' );
+							post.classList.add( 'post-hidden' );
+						}
+					} );
+					if ( isCoincidence ) {
+						$errorQuery.style.display = 'none';
+					} else {
+						$errorQuery.textContent = `No hay resultados para esta búsqueda: "${ query }"`;
+						$errorQuery.style.display = 'block';
+					}
+				}
+			}
+		} );
+	}, 100 );
 	return $section;
 }
