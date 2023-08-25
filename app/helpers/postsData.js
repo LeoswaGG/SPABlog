@@ -1,134 +1,140 @@
 /* The code is defining an object called `postsData` which contains four properties: `disciplinePosts`,
 `productivityPosts`, `mindSetPosts`, and `masculinityPosts`. Each of these properties is an object
-itself, containing six posts. Each post has three properties: `date`, `title`, and `img`. This code is likely 
+itself, containing posts. Each post has four properties: `date`, `title`, `img` and `id`. This code is likely 
 used to store and organize data for a blog or website that features posts related to different topics. */
 export const postsData = {
-    disciplinePosts: {
+    disciplina: {
         post1: {
-            date: 'disciplina',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Disciplina Post numero 1',
+            img: '',
+            id: '1',
+            category: 'disciplina'
         },
         post2: {
-            date: 'disciplina',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Disciplina Post numero 2',
+            img: '',
+            id: '2',
+            category: 'disciplina'
         },
         post3: {
-            date: 'disciplina',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Disciplina Post numero 3',
+            img: '',
+            id: '3',
+            category: 'disciplina'
         },
         post4: {
-            date: 'disciplina',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Disciplina Post numero 4',
+            img: '',
+            id: '4',
+            category: 'disciplina'
         },
         post5: {
-            date: 'disciplina',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Disciplina Post numero 5',
+            img: '',
+            id: '5',
+            category: 'disciplina'
         },
         post6: {
-            date: 'disciplina',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Disciplina Post numero 6',
+            img: '',
+            id: '6',
+            category: 'disciplina'
         }
     },
-    productivityPosts: {
+    productividad: {
         post1: {
-            date: 'productividad',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Productividad Post numero 1',
+            img: '',
+            id: '1',
+            category: 'productividad'
         },
         post2: {
-            date: 'productividad',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Productividad Post numero 2',
+            img: '',
+            id: '2',
+            category: 'productividad'
         },
         post3: {
-            date: 'productividad',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Productividad Post numero 3',
+            img: '',
+            id: '3',
+            category: 'productividad'
         },
         post4: {
-            date: 'productividad',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Productividad Post numero 4',
+            img: '',
+            id: '4',
+            category: 'productividad'
         },
         post5: {
-            date: 'productividad',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Productividad Post numero 5',
+            img: '',
+            id: '5',
+            category: 'productividad'
         },
-        post6: {
-            date: 'productividad',
-            title: 'es',
-            img: 'todo'
+    },
+    mentalidad: {
+        post1: {
+            date: '',
+            title: 'Mentalidad Post numero 1',
+            img: '',
+            id: '1',
+            category: 'mentalidad'
+        },
+        post2: {
+            date: '',
+            title: 'Mentalidad Post numero 2',
+            img: '',
+            id: '2',
+            category: 'mentalidad'
+        },
+        post3: {
+            date: '',
+            title: 'Mentalidad Post numero 3',
+            img: '',
+            id: '3',
+            category: 'mentalidad'
+        },
+        post4: {
+            date: '',
+            title: 'Mentalidad Post numero 4',
+            img: '',
+            id: '4',
+            category: 'mentalidad'
         }
     },
-    mindSetPosts: {
+    masculinidad: {
         post1: {
-            date: 'mentalidad',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Masculinidad Post numero 1',
+            img: '',
+            id: '1',
+            category: 'masculinidad'
         },
         post2: {
-            date: 'mentalidad',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Masculinidad Post numero 2',
+            img: '',
+            id: '2',
+            category: 'masculinidad'
         },
         post3: {
-            date: 'mentalidad',
-            title: 'es',
-            img: 'todo'
-        },
-        post4: {
-            date: 'mentalidad',
-            title: 'es',
-            img: 'todo'
-        },
-        post5: {
-            date: 'mentalidad',
-            title: 'es',
-            img: 'todo'
-        },
-        post6: {
-            date: 'mentalidad',
-            title: 'es',
-            img: 'todo'
-        }
-    },
-    masculinityPosts: {
-        post1: {
-            date: 'masculinidad',
-            title: 'es',
-            img: 'todo'
-        },
-        post2: {
-            date: 'masculinidad',
-            title: 'es',
-            img: 'todo'
-        },
-        post3: {
-            date: 'masculinidad',
-            title: 'es',
-            img: 'todo'
-        },
-        post4: {
-            date: 'masculinidad',
-            title: 'es',
-            img: 'todo'
-        },
-        post5: {
-            date: 'masculinidad',
-            title: 'es',
-            img: 'todo'
-        },
-        post6: {
-            date: 'masculinidad',
-            title: 'es',
-            img: 'todo'
+            date: '',
+            title: 'Masculinidad Post numero 3',
+            img: '',
+            id: '3',
+            category: 'masculinidad'
         }
     }
 };
