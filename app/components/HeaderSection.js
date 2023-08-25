@@ -44,12 +44,7 @@ export function HeaderSection ( title ) {
 							post.classList.add( 'post-hidden' );
 						}
 					} );
-					if ( isCoincidence ) {
-						$errorQuery.style.display = 'none';
-					} else {
-						$errorQuery.textContent = `No hay resultados para esta búsqueda: "${ query }"`;
-						$errorQuery.style.display = 'block';
-					}
+					isCoincidence ? ( $errorQuery.style.display = 'none' ) : ( ( $errorQuery.textContent = `No hay resultados para esta búsqueda: "${ query }"` ), ( $errorQuery.style.display = 'block' ) );
 				}
 			}
 		} );
