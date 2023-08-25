@@ -1,10 +1,9 @@
 /**
- * The `HeaderSection` function creates a section element with a logo, title, and search box.
+ * The `HeaderSection` function creates a header section with a logo, title, and search box, and
+ * includes functionality to filter posts based on a search query.
  * @param title - The title parameter is a string that represents the title of the header section.
- * @returns a dynamically created HTML section element with a header section. The title parameter is
- * used to populate the heading element in the section.
+ * @returns a dynamically created HTML section element with a header section.
  */
-
 export function HeaderSection ( title ) {
 	const $section = document.createElement( 'section' );
 	$section.innerHTML = ` 
