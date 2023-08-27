@@ -11,36 +11,7 @@ export function PostContainer ( postsData ) {
     <p class="quote-italic"></p>
   </header>
   <article class="post-content">
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
-    <p>Contenido.....</p>
+    ${ postsData.content }
     <div class="quote-post">
       <blockquote>"Frase."</blockquote>
     </div>
