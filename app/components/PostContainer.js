@@ -13,16 +13,13 @@ export function PostContainer ( postsData ) {
   <article class="post-content">
     ${ postsData.content }
     <div class="quote-post">
-      <blockquote>"Frase."</blockquote>
+      <blockquote>"${ postsData.quote }."</blockquote>
     </div>
-    <p>Mas contenido</p>
   </article>
   <div class="summary-card">
-    <h3>Síntesis del Artículo</h3>
-      <p>Descubre los secretos mejor guardados de los lugares remotos.</p>
-          <p>Exploración audaz de la naturaleza.</p>
-          <p>Captura de momentos inolvidables.</p>
-          <p>Conexiones profundas con culturas locales.</p>
-  </div>`;
+    <h3>De las palabras a la acción</h3>
+        ${ postsData.resume }
+    <p class="post-message">Recuerda que la consistencia es clave en la implementación de estas técnicas. Debes adaptarlas a tu estilo de vida y necesidades específicas porque lo que funciona para alguien más, puede que no funcione para ti.</p>
+        </div>`;
   return $section;
 }

@@ -1018,6 +1018,17 @@ svg {
 }
 
 .post-link {
+  font-weight: bold;
   color: red;
   text-decoration: underline;
+}
+
+.keyword {
+  color: red;
+  font-weight: bold;
+}
+
+.post-message {
+  text-decoration: underline;
+  font-weight: bold;
 }
