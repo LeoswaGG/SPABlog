@@ -10,26 +10,26 @@ export function PostHome () {
         <div class="cards">
             <div class="cards-row">
                 <div class="card">
-                    <p class="tip">Título 1</p>
-                    <p class="second-text">Fecha</p> 
-                </div>
+                    <p class="tip">No te conformes con menos de lo que mereces. Lucha con intensidad por tu felicidad y no dejes que nada ni nadie te detenga..</p>
+                    <a href="#/disciplina" class="post-link">Ver más...</a>
+                    </div>
                 <div class="card">
-                    <p class="tip">Titulo 2</p>
-                    <p class="second-text">Fecha</p>
-                </div>
+                    <p class="tip">El éxito no espera a los indecisos. Ábrete paso con audacia y valentía hacia tus objetivos, y la victoria será tuya.</p>
+                    <a href="#/productividad" class="post-link">Ver más...</a>
+                    </div>
                 <div class="card">
-                    <p class="tip">Titulo 3</p>
-                    <p class="second-text">Fecha</p>
+                    <p class="tip">La mediocridad es el enemigo del éxito. Abraza la excelencia en cada aspecto de tu vida y desafía tus límites constantemente..</p>
+                    <a href="#/mentalidad" class="post-link">Ver más...</a>
                 </div>
             </div>
             <div class="cards-row">     
                 <div class="card">
-                    <p class="tip">Titulo 4</p>
-                    <p class="second-text">Fecha</p>
+                    <p class="tip">El tiempo es tu recurso más valioso. No lo desperdicies en excusas. Actúa con pasión y convicción, y alcanzarás tus metas..</p>
+                    <a href="#/masculinidad" class="post-link">Ver más...</a>
                 </div>
                 <div class="card">
-                    <p class="tip">Titulo 5</p>
-                    <p class="second-text">Fecha</p>
+                    <p class="tip">No permitas que el miedo te detenga. Rompe las cadenas que te limitan y conquista tus sueños con determinación feroz.</p>
+                    <a href="#/disciplina" class="post-link">Ver más...</a>
                 </div>
             </div>
         </div>`;

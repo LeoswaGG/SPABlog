@@ -7,7 +7,7 @@ export const postsData = {
         post1: {
             date: '29-Agosto-23',
             title: 'Crea la Vida que Anhelas desde Hoy',
-            img: '',
+            img: 'disciplina-post1.png',
             id: '1',
             category: 'disciplina',
             content: `<p class="post-text"><span class="highlighted">"El éxito son las metas, todo lo demás son comentarios."</span> Comenzamos este artículo con una poderosa cita de Brian Tracy. Esta frase resonó profundamente en mí y me guio hacia la revelación del auténtico <span class="highlighted">propósito de mi vida</span>. Si pudiera volver a emprender mi viaje de desarrollo personal, priorizaría desde el inicio la comprensión de que las metas son la esencia misma de la existencia. En este artículo, deseo transmitirte la importancia fundamental de <span class="highlighted">establecer metas en la vida</span>. Sin unos objetivos claros y bien definidos, la vida puede carecer de sentido y valor.  Hace apenas unos meses, fui arrojado a un abismo donde esta verdad se manifestaba con claridad debido a dos motivos contundentes. Ante todo, la ignorancia me ocultó la inmensa influencia y <span class="highlighted">poder que las metas ejercen</span> y cómo podían moldear el rumbo de mi vida. En segundo término, aunque había tomado conciencia de la importancia de fijar metas, me di cuenta de que <span class="highlighted">mis objetivos carecían de la definición clara y específica</span>. Esta falta de precisión ocasionaba que mis esfuerzos se dispersaran y que no lograra canalizar de manera efectiva mis pensamientos, energía y ambiciones hacia mis metas. Este desconocimiento me llevó a perder el tiempo en actividades superfluas, actividades vagas que no me aportaban nada a mi vida, al contrario, actividades que me arruinaban como persona y que robaban mi atención, mi tiempo, mi mente, mi energía, mis pensamientos, sencillamente porque no tenía metas y no sabía que hacer, seguía hábitos del desarrollo personal solo porque me decían, pero jamás profundizaba si era mi meta, el porqué hacia esos hábitos o si quería conseguir algo en concreto con esos hábitos, literalmente estaba mejorando mi vida en piloto automático.</p> 
@@ -32,124 +32,12 @@ export const postsData = {
             <p class="post-text"><span class="highlighted">El compromiso es un componente vital de la disciplina.</span> Al comprometernos con nuestras metas, estamos estableciendo una base sólida para la acción constante y enfocada.<span class="highlighted"> Nuestra propia resistencia interna puede ser uno de los mayores obstáculos para la disciplina.</span> A menudo, nuestra mente busca la comodidad y la gratificación instantánea en lugar del trabajo duro y sostenido.<span class="highlighted"> La autodisciplina puede transformarse en un hábito arraigado.</span> Al realizar acciones disciplinadas de manera consistente, estamos cableando nuestra mente y nuestro comportamiento hacia la excelencia. <span class="highlighted">Los momentos de falta de motivación son inevitables.</span> Aquí es donde la disciplina se convierte en nuestra aliada más poderosa. <span class="highlighted">En lugar de depender únicamente de la motivación, confiamos en nuestros hábitos disciplinados para impulsarnos hacia adelante.</span> Yo no creo en la motivación, la motivación es para almas débiles, ya que quienes la abrazan, al primer obstáculo que tienen, suelen abandonar. En su lugar, la verdadera fuerza reside en la disciplina implacable que persiste en las condiciones más adversas.</p> `,
             quote: 'La disciplina es la llave maestra hacia la riqueza. -Brian Tracy',
             resume: `<h2>Indagando en tu laboratorio mental:</h2> <p>¿Qué medidas necesitas tomar para mantener el <span class="keyword">enfoque</span> en tus metas?.</p><p>¿Cuál es el logro más significativo que has experimentado gracias a la disciplina y qué <span class="keyword">aprendiste</span> de ese proceso?.</p>¿Cómo podrías <span class="keyword">fortalecer</span> tu resiliencia y autodisciplina para superar los desafíos que se te presentan?<p></p><h2>Enseñanzas sobre la Disciplina:</h2><p>Aquellos que desafían la comodidad y perseveran son recompensados.</p><p><span class="keyword">La disciplina</span> transforma lo ordinario en extraordinario.</p><p>El<span class="keyword">autodominio</span> y la <span class="keyword">resiliencia</span> son fundamentales para cultivarla.</p><h2>Técnicas para Fortalecer la Disciplina:</h2><p>Establecer <a href="#/disciplina/articulo/1" class="post-link">metas</a> claras proporciona dirección y propósito.</p><p>En lugar de imaginar todo lo que quieres, imagina escenarios en los que <span class="keyword">superas</span> con éxito los desafíos. Esto fortalecerá tu confianza y mentalidad positiva.</p><p> Ante los problemas, en lugar de quedarte enfocado en los obstáculos, concéntrate en las posibles soluciones. Esto promoverá una actitud <span class="keyword">proactiva</span>.</p><p><a href="#/" class="post-link">Planifica</a> tu día y tu semana en bloques dedicados a <span class="keyword">actividades específicas</span>. Esto te ayudará a mantener una estructura constante.</p>`
-        },
-        post3: {
-            date: '',
-            title: 'Disciplina Post numero 3',
-            img: '',
-            id: '3',
-            category: 'disciplina'
-        },
-        post4: {
-            date: '',
-            title: 'Disciplina Post numero 4',
-            img: '',
-            id: '4',
-            category: 'disciplina'
-        },
-        post5: {
-            date: '',
-            title: 'Disciplina Post numero 5',
-            img: '',
-            id: '5',
-            category: 'disciplina'
-        },
-        post6: {
-            date: '',
-            title: 'Disciplina Post numero 6',
-            img: '',
-            id: '6',
-            category: 'disciplina'
         }
     },
     productividad: {
-        post1: {
-            date: '',
-            title: 'Productividad Post numero 1',
-            img: '',
-            id: '1',
-            category: 'productividad'
-        },
-        post2: {
-            date: '',
-            title: 'Productividad Post numero 2',
-            img: '',
-            id: '2',
-            category: 'productividad'
-        },
-        post3: {
-            date: '',
-            title: 'Productividad Post numero 3',
-            img: '',
-            id: '3',
-            category: 'productividad'
-        },
-        post4: {
-            date: '',
-            title: 'Productividad Post numero 4',
-            img: '',
-            id: '4',
-            category: 'productividad'
-        },
-        post5: {
-            date: '',
-            title: 'Productividad Post numero 5',
-            img: '',
-            id: '5',
-            category: 'productividad'
-        },
     },
     mentalidad: {
-        post1: {
-            date: '',
-            title: 'La clave para triunfar en el mundo moderno🦍🐺🦁',
-            img: 'mentalidad-post1.png',
-            id: '1',
-            category: 'mentalidad'
-        },
-        post2: {
-            date: '',
-            title: 'Mentalidad Post numero 2',
-            img: '',
-            id: '2',
-            category: 'mentalidad'
-        },
-        post3: {
-            date: '',
-            title: 'Mentalidad Post numero 3',
-            img: '',
-            id: '3',
-            category: 'mentalidad'
-        },
-        post4: {
-            date: '',
-            title: 'Mentalidad Post numero 4',
-            img: '',
-            id: '4',
-            category: 'mentalidad'
-        }
     },
     masculinidad: {
-        post1: {
-            date: '',
-            title: 'Mientras tu te la jalas, Elon Musk se hace mas millonario', // este puede ser el título del post o la frase de la miniatura
-            img: 'mentalidad-post1.png',
-            id: '1',
-            category: 'masculinidad'
-        },
-        post2: {
-            date: '',
-            title: 'Masculinidad Post numero 2',
-            img: '',
-            id: '2',
-            category: 'masculinidad'
-        },
-        post3: {
-            date: '',
-            title: 'Masculinidad Post numero 3',
-            img: '',
-            id: '3',
-            category: 'masculinidad'
-        }
     }
 };
