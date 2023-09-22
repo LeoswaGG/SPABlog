@@ -1029,6 +1029,9 @@ svg {
 }
 
 .post-message {
-  text-decoration: underline;
   font-weight: bold;
+}
+
+.title-p {
+  font-size: 30px;
 }
