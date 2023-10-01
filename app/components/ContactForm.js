@@ -49,7 +49,7 @@ export function ContactForm () {
                         message
                     } )
                 };
-                const response = await fetch( 'https://formsubmit.co/ajax/smartmart.comerce@gmail.com', options );
+                const response = await fetch( 'https://formsubmit.co/ajax/leot3ch.pr@gmail.com', options );
                 if ( !response.ok ) throw `An error ocurred: ${ response.status } ${ response.statusText }`;
                 const data = await response.json();
                 console.log( data );
