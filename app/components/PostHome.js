@@ -10,7 +10,7 @@ export function PostHome () {
         <div class="cards">
             <div class="cards-row">
                 <div class="card">
-                    <p class="tip">No te conformes con menos de lo que mereces. Lucha con intensidad por tu felicidad y no dejes que nada ni nadie te detenga..</p>
+                    <p class="tip">No te conformes con menos de lo que mereces. Lucha con intensidad por tu felicidad y no dejes que nada ni nadie te detenga.</p>
                     <a href="#/disciplina" class="post-link">Ver más...</a>
                     </div>
                 <div class="card">
@@ -18,13 +18,13 @@ export function PostHome () {
                     <a href="#/productividad" class="post-link">Ver más...</a>
                     </div>
                 <div class="card">
-                    <p class="tip">La mediocridad es el enemigo del éxito. Abraza la excelencia en cada aspecto de tu vida y desafía tus límites constantemente..</p>
+                    <p class="tip">La mediocridad es el enemigo del éxito. Abraza la excelencia en cada aspecto de tu vida y desafía tus límites constantemente.</p>
                     <a href="#/mentalidad" class="post-link">Ver más...</a>
                 </div>
             </div>
             <div class="cards-row">     
                 <div class="card">
-                    <p class="tip">El tiempo es tu recurso más valioso. No lo desperdicies en excusas. Actúa con pasión y convicción, y alcanzarás tus metas..</p>
+                    <p class="tip">El tiempo es tu recurso más valioso. No lo desperdicies en excusas. Actúa con pasión y convicción, y alcanzarás tus metas.</p>
                     <a href="#/masculinidad" class="post-link">Ver más...</a>
                 </div>
                 <div class="card">
