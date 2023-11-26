@@ -7,7 +7,7 @@ export const postsData = {
         post1: {
             date: '29-Agosto-23',
             title: 'Crea la Vida que Anhelas desde Hoy',
-            img: 'disciplina-post1.png',
+            img: 'disciplina-post1.webp',
             id: '1',
             category: 'disciplina',
             content: `<p class="post-text"><span class="highlighted">"El éxito son las metas, todo lo demás son comentarios."</span> Comenzamos este artículo con una poderosa cita de Brian Tracy. Esta frase resonó profundamente en mí y me guio hacia la revelación del auténtico <span class="highlighted">propósito de mi vida</span>. Si pudiera volver a emprender mi viaje de desarrollo personal, priorizaría desde el inicio la comprensión de que las metas son la esencia misma de la existencia. En este artículo, deseo transmitirte la importancia fundamental de <span class="highlighted">establecer metas en la vida</span>. Sin unos objetivos claros y bien definidos, la vida puede carecer de sentido y valor.  Hace apenas unos meses, fui arrojado a un abismo donde esta verdad se manifestaba con claridad debido a dos motivos contundentes. Ante todo, la ignorancia me ocultó la inmensa influencia y <span class="highlighted">poder que las metas ejercen</span> y cómo podían moldear el rumbo de mi vida. En segundo término, aunque había tomado conciencia de la importancia de fijar metas, me di cuenta de que <span class="highlighted">mis objetivos carecían de la definición clara y específica</span>. Esta falta de precisión ocasionaba que mis esfuerzos se dispersaran y que no lograra canalizar de manera efectiva mis pensamientos, energía y ambiciones hacia mis metas. Este desconocimiento me llevó a perder el tiempo en actividades superfluas, actividades vagas que no me aportaban nada a mi vida, al contrario, actividades que me arruinaban como persona y que robaban mi atención, mi tiempo, mi mente, mi energía, mis pensamientos, sencillamente porque no tenía metas y no sabía que hacer, seguía hábitos del desarrollo personal solo porque me decían, pero jamás profundizaba si era mi meta, el porqué hacia esos hábitos o si quería conseguir algo en concreto con esos hábitos, literalmente estaba mejorando mi vida en piloto automático.</p> 
@@ -21,7 +21,7 @@ export const postsData = {
         post2: {
             date: '28-Agosto-23',
             title: 'El Papel Vital de la Disciplina en tu Vida',
-            img: 'disciplina-post2.png',
+            img: 'disciplina-post2.webp',
             id: '2',
             category: 'disciplina',
             content: `<p class="post-text"><span class="highlighted">Sin el control de la disciplina,</span> tu destino da un giro radical por el camino de la mediocridad.<span class="highlighted"> Imagina una vida confinada a las sombras, donde tus aspiraciones se convierten en polvo y tu potencial se desperdicia como un tesoro abandonado.</span> Imagina el dolor del arrepentimiento</span> al contemplar un rastro de proyectos inacabados, sueños abandonados y habilidades sin explotar. <span class="highlighted">Un tapiz tejido con hilos de procrastinación, ambiciones enredadas y promesas incumplidas.</span> <span class="highlighted">La mediocridad envuelve con sus brazos fríos e implacables</span> a quienes carecen de disciplina. <span class="highlighted">Tu potencial, que alguna vez fue un horno ardiente, se reduce a una vela.</span> La gloria que pudiste haber obtenido se desliza entre tus dedos como granos de arena, dejando solo amargura y anhelo por lo que pudo haber sido.</p>
@@ -40,7 +40,7 @@ export const postsData = {
         post1: {
             date: '07-Octubre-2023',
             title: 'La clave para triunfar en el mundo moderno',
-            img: 'mentalidad-post1.png',
+            img: 'mentalidad-post1.webp',
             id: '1',
             category: 'mentalidad',
             content: `<p class="post-text">El mundo moderno es un campo de batalla, donde los débiles son devorados  por los fuertes. En esta implacable lucha por el éxito, solo aquellos que poseen el auto control sobreviven y prosperan. El autocontrol mi querido lector, es la clave maestra para triunfar en este mundo lleno de intriga, desafíos y distracciones, en un mundo donde el hombre experimenta debilidad al sucumbir a sus instintos primarios, lo que puede resultar en la pérdida de control sobre sí mismo. Esto puede manifestarse en la elección de consumir alimentos basura, comportarse inapropiadamente en ciertos entornos, o enfocar en exceso sus pensamientos en mujeres, sin que ellas estén al tanto de ello. ¿Te arriesgarás a vivir sin haber descubierto tu verdadero potencial?<p>
@@ -56,7 +56,7 @@ export const postsData = {
         post1: {
             date: '22-Septiembre-23',
             title: 'Más allá del placer inmediato',
-            img: 'masculinidad-post1.png',
+            img: 'masculinidad-post1.webp',
             id: '1',
             category: 'masculinidad',
             content: `<p class="post-text"> Desperdiciar <span class="highlighted">la energía más valiosa que tienes</span> te hace débil, todas <span class="highlighted">tus aspiraciones y ambiciones caen</span>, se debilita tu disciplina, esto fue lo que me paso a mí, <span class="highlighted">el éxito no espera a los débiles</span> que se dejan controlar por sus impulsos. Cualquier hombre que alcanzó el éxito es porque tiene un <span class="highlighted">total autocontrol y autodominio en sí</span> mismo, sabe como canalizar emociones hacia lo que quiere, sabe canalizar la emoción de la avaricia, de la envidia, del coraje y del sexo para conseguir lo que quiere. Este hombre <span class="highlighted">reconoce esas emociones</span> y lo que hace es entrar en el <span class="highlighted">campo de batalla</span>, reconocer a sus enemigos y jugar para destrozarlos. No puedes encontrar algún hombre que tenga éxito y que no tenga un <span class="highlighted">dominio sobre su mente</span>.  En mi caso lo que hice fue aceptar que soy un lujurioso y obtener consciencia del poder esta energía y usarla para concentrar todos mis esfuerzos para satisfacer a la mujer más hermosa del mundo y que ella esté orgullosa de mí, si algo <span class="highlighted">atrae a las mujeres</span> te puedo asegurar que es <span class="highlighted">tu capacidad y tu autocontrol para lograr cosas</span>. Me volví demasiado fuerte mentalmente, comprendí que esto es una distracción para lo que quiero, debes eliminar todas esas cosas que haces que te alejen de tus metas. Tal vez si tu objetivo es ser actor de contenido +18, este artículo no es para ti, hablando de contenido +18, yo <span class="highlighted">aborrezco el porno</span>, salí de esa adicción y no me arrepiento de hacerlo. Pero la masturbación se convirtió en mi verdugo. Cuando tiraba mi <span class="highlighted">energía al suelo</span> me sentía débil y vencido. Pero algo de lo que reconozco es que después de hacer esto me sentía terrible conmigo, pero ese sentimiento lo canalizaba para tener más fuerza en el gimnasio y funciono, recordaba que era un perdedor por hacerlo y eso me llevo a entrenar como nunca. </p>

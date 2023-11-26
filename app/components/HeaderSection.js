@@ -9,7 +9,7 @@ export function HeaderSection ( title ) {
 	$section.innerHTML = ` 
 		<div class="container">
 			<div class="logo-card">
-				<img src="app/assets/logo-no-background.png" alt="logo" class="logo-section">
+				<img src="app/assets/logo-no-background.webp" alt="logo" class="logo-section">
 			</div>
 			<div class="title-card">
 				<h2>${ title }</h2>

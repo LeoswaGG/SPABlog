@@ -26,37 +26,37 @@ export function Menu () {
                 </li>
                 <li class="nav-item">
                     <a href="#/inicio" class="nav-link">
-                        <img src="app/assets/home.png" alt="inicio">
+                        <img src="app/assets/home.webp" alt="inicio">
                         <span class="link-text">Renacimiento</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#/disciplina" class="nav-link">
-                        <img src="app/assets/achievement.png" alt="disciplina">
+                        <img src="app/assets/achievement.webp" alt="disciplina">
                         <span class="link-text">Dominio Propio</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#/productividad" class="nav-link">
-                        <img src="app/assets/hourglass.png" alt="productividad">
+                        <img src="app/assets/hourglass.webp" alt="productividad">
                         <span class="link-text">Momentum</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#/mentalidad" class="nav-link">
-                        <img src="app/assets/brain.png" alt="mentalidad">
+                        <img src="app/assets/brain.webp" alt="mentalidad">
                         <span class="link-text">Voluntad Inquebrantable</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#/masculinidad" class="nav-link">
-                        <img src="app/assets/pillars.png" alt="masculinidad">
+                        <img src="app/assets/pillars.webp" alt="masculinidad">
                         <span class="link-text">Excelencia</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="theme">
-                        <img src="app/assets/light.png" alt="tema" id="theme-2">
+                        <img src="app/assets/light.webp" alt="tema" id="theme-2">
                         <span class="link-text">Esencia</span>
                     </a>
                 </li>

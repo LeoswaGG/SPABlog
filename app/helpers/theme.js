@@ -7,8 +7,8 @@ export function Theme () {
     const $body = document.querySelector( 'body' );
     const $loader = document.querySelector( '.loader' );
     const theme = localStorage.getItem( 'theme' ); // default value - null
-    const moon = 'app/assets/dark.png';
-    const sun = 'app/assets/light.png';
+    const moon = 'app/assets/dark.webp';
+    const sun = 'app/assets/light.webp';
     const darkLoader = 'app/assets/loader-dark.svg';
     const lightLoader = 'app/assets/loader.svg';
     const lightTheme = () => {

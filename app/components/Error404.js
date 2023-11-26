@@ -17,5 +17,5 @@ export function Error404 () {
         <a href="#/"  class="return-error" >Regresar...</a>
         <div class="error-title">Algo ha salido mal. Ocurrió un error: 404 Not Found</div>
         </div>
-        <img src="app/assets/404error.jpg" alt="Error" class="error-img"></img>`;
+        <img src="app/assets/404error.webp" alt="Error" class="error-img"></img>`;
 }
