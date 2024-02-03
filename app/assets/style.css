@@ -840,7 +840,8 @@ svg {
 .post-container {
   margin: 1rem auto;
   display: grid;
-  max-width: 100%;
+  /* arregla problema de responsividad 13/12/23 */
+  max-width: 90%;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
@@ -861,7 +862,8 @@ svg {
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1), all 0.3s ease-out;
   margin: auto;
   margin-bottom: 45px;
-  /* box-sizing: border-box; baja el tamaño de la imagen pero soluciona lo del iPad*/
+  /* arregla problema de responsividad 13/12/23  */
+  box-sizing: border-box; 
 }
 
 /* small screen */
@@ -882,8 +884,9 @@ svg {
   margin-right: 4px;
 }
 
+/* cambio de tamaño al titulo 13/12/23 para que no desborde la img */
 .post .post-title {
-  font-size: 24px;
+  font-size: 23px;
   margin: 24px 0 16px;
   font-weight: 600;
 }
